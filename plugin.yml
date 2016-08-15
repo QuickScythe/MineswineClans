@@ -1,0 +1,60 @@
+name: Clans
+version: 1.0.0
+main: me.athena222.clans.Main
+authors: [Athena222, Moderocky]
+description: A clans plugin for Mineswine, transferred to java by Athena222, coded in Skript by Moderocky.
+depend: [Vault]
+
+commands:   
+     clan:
+        description: The clan command
+        usage: /clan
+        aliases: [group, team, jediclan, jclan]
+     clans:
+        description: List the current clans
+        usage: /clans
+     clanadmin:
+        description: Clan administration.
+        usage: /clanadmin
+        aliases: [cadmin, adminclan]
+     clanmoney:
+        description: Clan money command.
+        usage: /clanmoney
+     clanchat:
+        description: Talk to your clan!
+        usage: /clanchat
+        aliases: [cc]
+     staff:
+        description: Shows online staff.
+        usage: /staff
+        aliases: [stafflist]
+     fakekill:
+        description: Fake kills a player.
+        usage: /fakekill  
+     takeclantax:
+        description: Queue a clan tax.
+        usage: /takeclantax   
+              
+permissions:        
+     admin.clan:
+        description: Gives access to use /clanadmin
+        default: op
+     admin.clantax:
+        description: Gives access to use /takeclantax
+        default: op
+     admin.fakekill:
+        description: Gives access to fake kill players.
+        default: op
+     staff.list:
+        description: Gives access to show up on /staff
+        default: op   
+     member.clanlist:
+        description: Gives access to use /clans
+     member.liststaff:
+        description: Gives access to use /staff
+     member.clan:
+        description: Gives access to use /clan
+     mod.clanspy:
+        description: Gives access to spy on clan chats.
+     member.clanchat: 
+        description: Gives access to use /clanchat
